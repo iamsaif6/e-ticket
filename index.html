@@ -192,9 +192,9 @@
             </div>
           </div>
         </div>
-        <div class="bg-white p-8 mt-6 rounded-3xl flex">
+        <div class="bg-white p-8 mt-6 rounded-3xl flex gap-16">
           <!-- Seat Selection Section -->
-          <div class="flex-1 w-3/4">
+          <div class="w-2/4">
             <h3 class="raleway font-bold text-2xl">Select Your Seat</h3>
             <hr class="border-dashed border-[1px] my-6" />
             <div class="flex justify-between items-center">
@@ -233,10 +233,118 @@
             </div>
           </div>
           <!-- Seat Details Section -->
-          <div class="flex-none w-2/4">p</div>
+          <div class="flex-1">
+            <h3 class="raleway font-bold text-2xl">Select Your Seat</h3>
+            <hr class="border-dashed border-[1px] my-6" />
+            <!-- Seat data table -->
+            <div class="bg-[#F7F8F8] rounded-xl p-8">
+              <div class="overflow-x-auto">
+                <table class="table">
+                  <!-- head -->
+                  <thead class="text-[#030712] inter font-medium text-xs">
+                    <tr>
+                      <th>Seat <span class="bg-[#1DD100] text-white px-[6px] rounded-2xl">2</span></th>
+                      <th>Class</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody class="inter text-[#03071299]">
+                    <!-- row 1 -->
+                    <tr>
+                      <td>C2</td>
+                      <td>Economoy</td>
+                      <td>550</td>
+                    </tr>
+                    <!-- row 2 -->
+                    <tr>
+                      <td>C2</td>
+                      <td>Economoy</td>
+                      <td>550</td>
+                    </tr>
+                    <!-- row 3 -->
+                    <tr>
+                      <td>C2</td>
+                      <td>Economoy</td>
+                      <td>550</td>
+                    </tr>
+                    <!-- Price row3-->
+                    <tr class="inter text-[#030712] font-medium">
+                      <td>Total Price</td>
+                      <td></td>
+                      <td>BDT 1100</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Cupon input section -->
+              <div class="bg-white rounded-xl my-6">
+                <form action="#" class="flex justify-between py-2 px-4 items-center">
+                  <input class="outline-none h-full" type="text" placeholder="Have any copupon?" />
+                  <button class="btn bg-[#1DD100] text-white">Apply</button>
+                </form>
+              </div>
+              <div class="inter tex-[#030712] flex items-center justify-around">
+                <p>Grand Total</p>
+                <p>BDT 1100</p>
+              </div>
+            </div>
+            <!-- Customer Details -->
+            <div class="mt-6">
+              <form action="#" class="inter">
+                <p class="text-[#030712] font-semibold mb-4">Passenger Name*</p>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="text-[#03071266] font-normal p-6 rounded-xl border w-full outline-none"
+                />
+                <p class="text-[#030712] font-semibold mt-4 mb-4">Phone Number*</p>
+                <input
+                  type="tel"
+                  required
+                  placeholder="Enter your phone number"
+                  class="text-[#03071266] font-normal p-6 rounded-xl border w-full outline-none"
+                />
+                <p class="text-[#030712] font-semibold mt-4 mb-4">Email ID</p>
+                <input
+                  type="email"
+                  placeholder="Enter your email id"
+                  class="text-[#03071266] font-normal p-6 rounded-xl border w-full outline-none"
+                />
+                <button class="btn w-full my-6 bg-[#1DD100] text-white py-5 h-auto" type="submit">Next</button>
+              </form>
+              <div class="flex items-center justify-around text-[#03071299]">
+                <a href="#" class="underline">Terms and Conditions</a>
+                <a href="#" class="underline">Cancellation Policy</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <!-- Footer Start Here -->
+    <footer class="bg-[#030712] text-white py-[120px]">
+      <div class="max-w-screen-xl mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="max-w-[400px]">
+            <h3 class="raleway font-extrabold text-[36px]">E-Ticket</h3>
+            <p class="text-[#ffffffcc]">P-Ticket is a digital platform to make your daily commuting better.</p>
+          </div>
+          <div>
+            <p class="mb-5">Download our app</p>
+            <a href="#"><img src="images/googlePlay.png" alt="" /></a>
+          </div>
+        </div>
+        <hr class="border-dashed border-[#ffffff4d] border-[1px] mt-[60px] mb-8" />
+        <div class="flex items-center justify-between text-[15px]">
+          <p>@all rights reserved, E-Ticket services limited.2024</p>
+          <ul class="flex items-center justify-center gap-5">
+            <li><a href="#">Terms & condition</a></li>
+            <li><a href="#">Return & refund policy</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <!-- JS Files -->
     <script src="js/script.js"></script>
   </body>
