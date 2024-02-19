@@ -36,32 +36,31 @@ function createElement(seatNumber) {
 
 const inputElement = document.getElementById('cupon_input');
 const applyButton = document.getElementById('cupon_submit');
+const discountTextId = document.getElementById('discount_text_ID');
 
 // Test
 
 applyButton.addEventListener('click', function () {
   console.log('btn clicked');
+  console.log(seatBooked.length);
 
   if (seatBooked.length > 3) {
     if (inputElement.value === 'NEW15') {
-      applyButton.addEventListener('click', function () {
-        discountedPrice = totalPrice - (totalPrice * 15) / 100;
-        setELementTextByID('grand_total', discountedPrice);
-
-        //   Add discount info to new child
-        let newDiscountText = document.getElementById('discount_price_text');
-        newDiscountText.innerText = `You got ${totalPrice - discountedPrice} taka discount`;
-        hideELementByID('form');
-      });
+      discountedPrice = totalPrice - (totalPrice * 15) / 100;
+      setELementTextByID('grand_total', discountedPrice);
+      //   Add discount info to new child
+      let newDiscountText = document.getElementById('discount_price_text');
+      newDiscountText.innerText = totalPrice - discountedPrice;
+      discountTextId.classList.remove('hidden');
+      hideELementByID('form');
     } else if (inputElement.value === 'Couple 20') {
-      applyButton.addEventListener('click', function () {
-        discountedPrice = totalPrice - (totalPrice * 20) / 100;
-        setELementTextByID('grand_total', discountedPrice);
-        //   Add discount info to new child
-        let newDiscountText = document.getElementById('discount_price_text');
-        newDiscountText.innerText = `You got ${totalPrice - discountedPrice} taka discount`;
-        hideELementByID('form');
-      });
+      discountedPrice = totalPrice - (totalPrice * 20) / 100;
+      setELementTextByID('grand_total', discountedPrice);
+      //   Add discount info to new child
+      let newDiscountText = document.getElementById('discount_price_text');
+      newDiscountText.innerText = totalPrice - discountedPrice;
+      discountTextId.classList.remove('hidden');
+      hideELementByID('form');
     } else {
       alert('Please enter valid cupon');
     }

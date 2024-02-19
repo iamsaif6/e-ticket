@@ -73,7 +73,7 @@
     <!-- Header Bottom Card -->
     <section class="card_wrapper inter sm:flex space-y-9 sm:space-y-0 gap-6 max-w-[960px] sm:mx-auto mx-[15px] sm:translate-y-[-50%]">
       <!-- Card 1 -->
-      <div class="bg-white card flex flex-1 flex-row items-center px-[32px] py-[37px] gap-5 rounded-3xl border-b-[#1DD100] border-b-[3px]">
+      <div class="bg-white shadow-lg card flex flex-1 flex-row items-center px-[32px] py-[37px] gap-5 rounded-3xl border-b-[#1DD100] border-b-[3px]">
         <div>
           <img src="images/people.png" alt="" />
         </div>
@@ -83,7 +83,7 @@
         </div>
       </div>
       <!-- Card 2 -->
-      <div class="bg-white card flex flex-1 flex-row items-center px-[32px] py-[37px] gap-5 rounded-3xl border-b-[#1DD100] border-b-[3px]">
+      <div class="bg-white shadow-lg card flex flex-1 flex-row items-center px-[32px] py-[37px] gap-5 rounded-3xl border-b-[#1DD100] border-b-[3px]">
         <div>
           <img src="images/ticket-cupon.png" alt="" />
         </div>
@@ -93,7 +93,7 @@
         </div>
       </div>
       <!-- Card 3 -->
-      <div class="bg-white card flex flex-1 flex-row items-center px-[32px] py-[37px] gap-5 rounded-3xl border-b-[#1DD100] border-b-[3px]">
+      <div class="bg-white shadow-lg card flex flex-1 flex-row items-center px-[32px] py-[37px] gap-5 rounded-3xl border-b-[#1DD100] border-b-[3px]">
         <div>
           <img src="images/stoppage.png" alt="" />
         </div>
@@ -452,6 +452,11 @@
                       <td></td>
                       <td>BDT <span id="total_price">0</span></td>
                     </tr>
+                    <tr id="discount_text_ID" class="inter hidden text-[#030712] font-medium">
+                      <td>Discount</td>
+                      <td></td>
+                      <td>BDT <span id="discount_price_text">0</span></td>
+                    </tr>
                   </tbody>
                 </table>
               <!-- Cupon input section -->
@@ -462,10 +467,10 @@
                 </div>
               </div>
               <!-- Discount price info -->
-              <p id="discount_price_text"></p>
+              <p id="discount_price_text" class="font-semibold"></p>
               <div class="mt-6 inter tex-[#030712] flex items-center justify-between">
-                <p>Grand Total</p>
-                <p>BDT <span id="grand_total">0</span></p>
+                <p class="font-semibold">Grand Total</p>
+                <p class="font-semibold">BDT <span id="grand_total">0</span></p>
               </div>
             </div>
             <!-- Customer Details -->

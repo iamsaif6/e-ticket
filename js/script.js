@@ -29,10 +29,6 @@ function book(event) {
     totalPrice = totalPrice + perSeatPrice;
     setELementTextByID('total_price', totalPrice);
     setELementTextByID('grand_total', totalPrice);
-
-    // ----------
-
-    //-----------
   } else {
     alert(`You've booked the max number of ticket`);
   }
